@@ -21,7 +21,7 @@ jobs:
     runs-on: Gaia-Runner-medium
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           check-latest: true
@@ -63,7 +63,7 @@ jobs:
     runs-on: Gaia-Runner-medium
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           check-latest: true
@@ -132,7 +132,7 @@ jobs:
           lfs: true
       - name: checkout LFS objects
         run: git lfs checkout
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           check-latest: true
@@ -163,7 +163,7 @@ jobs:
           lfs: true
       - name: checkout LFS objects
         run: git lfs checkout
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           check-latest: true
@@ -213,7 +213,7 @@ jobs:
     runs-on: Gaia-Runner-medium
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
           check-latest: true

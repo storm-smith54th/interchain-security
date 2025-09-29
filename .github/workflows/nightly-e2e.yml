@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 200
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E compatibility test
@@ -41,14 +41,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E happy-path test
@@ -57,14 +57,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E changeover test
@@ -73,14 +73,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E democracy-reward tests
@@ -89,14 +89,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E democracy tests
@@ -105,14 +105,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E slash-throttle tests
@@ -121,14 +121,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E multi-consumer tests
@@ -137,14 +137,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E consumer-misbehaviour tests
@@ -153,14 +153,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E consumer-double-sign tests
@@ -169,14 +169,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E consumer-double-downtime tests
@@ -185,14 +185,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security opt-in chain
@@ -201,14 +201,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security Top N chain
@@ -217,14 +217,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security validator-set cap
@@ -233,14 +233,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security validators-power cap
@@ -249,14 +249,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security allowlist
@@ -265,14 +265,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security denylist
@@ -281,14 +281,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security prioritylist
@@ -297,14 +297,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E partial set security modification proposal
@@ -313,14 +313,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E active set changes
@@ -329,14 +329,14 @@ jobs:
           runs-on: ubuntu-latest
           timeout-minutes: 20
           steps:
-            - uses: actions/setup-go@v5
+            - uses: actions/setup-go@v6
               with:
                 go-version: "1.22"
             - uses: actions/checkout@v4
             - name: Checkout LFS objects
               run: git lfs checkout
             - name: Setup Go
-              uses: actions/setup-go@v5
+              uses: actions/setup-go@v6
               with:
                 go-version: "1.22" # The Go version to download (if necessary) and use.
             - name: E2E basic permissionless tests
@@ -345,14 +345,14 @@ jobs:
           runs-on: ubuntu-latest
           timeout-minutes: 20
           steps:
-            - uses: actions/setup-go@v5
+            - uses: actions/setup-go@v6
               with:
                 go-version: "1.22"
             - uses: actions/checkout@v4
             - name: Checkout LFS objects
               run: git lfs checkout
             - name: Setup Go
-              uses: actions/setup-go@v5
+              uses: actions/setup-go@v6
               with:
                 go-version: "1.22" # The Go version to download (if necessary) and use.
             - name: E2E permissionless TopN tests
@@ -362,14 +362,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: "1.22"
       - uses: actions/checkout@v4
       - name: Checkout LFS objects
         run: git lfs checkout
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: "1.22" # The Go version to download (if necessary) and use.
       - name: E2E inactive provider validators on consumer
