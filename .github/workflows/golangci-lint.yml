@@ -27,7 +27,7 @@ jobs:
             go.sum
             **/go.mod
             **/go.sum
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: run linting
         if: env.GIT_DIFF
         run: |
