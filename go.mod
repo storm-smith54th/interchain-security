@@ -1,6 +1,6 @@
 module github.com/cosmos/interchain-security/v7
 
-go 1.23.6
+go 1.24.0
 
 require (
 	cosmossdk.io/errors v1.0.2
@@ -150,7 +150,7 @@ require (
 	github.com/cosmos/ibc-go/v10 v10.1.1
 	github.com/informalsystems/itf-go v0.0.1
 	github.com/spf13/viper v1.20.1
-	golang.org/x/mod v0.24.0
+	golang.org/x/mod v0.29.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20250324211829-b45e905df463
 )
 
